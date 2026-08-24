@@ -1,7 +1,7 @@
 # Laboratorio #1 – Herramientas de la Programación Aplicada III (.Net)
 
 **Universidad Tecnológica de Panamá**
-**Facultad de Ingenieria de Sistema y Computacion – Campus Víctor Levis Sasso**
+**Facultad de Ingeniería Sistemas y Computacional – Campus Víctor Levis Sasso**
 **Elaborado por:** Ing. Irina Fong
 **Programado por:** Elvis Li
 
@@ -9,27 +9,7 @@ Repositorio con las soluciones a las 3 prácticas del Laboratorio #1: aplicacion
 
 ---
 
-## Descargas directas
-
-| Práctica | Descarga |
-|---|---|
-| Práctica #1 – Controles | [⬇️ Pract1_Controles_ProgramadoPor_ElvisLi.zip](../../releases/latest/download/Pract1_Controles_ProgramadoPor_ElvisLi.zip) |
-| Práctica #2 – Descuentos | [⬇️ Pract2_Descuento_ProgramadoPor_ElvisLi.zip](../../releases/latest/download/Pract2_Descuento_ProgramadoPor_ElvisLi.zip) |
-| Práctica #3 – Estructura If | [⬇️ Pract3_Estructura_ProgramadoPor_ElvisLi.zip](../../releases/latest/download/Pract3_Estructura_ProgramadoPor_ElvisLi.zip) |
-
-**Cómo activar estos enlaces (una sola vez):**
-1. En tu repositorio de GitHub, ve a la pestaña **Releases** (en la barra lateral derecha del repo, o en `github.com/tuusuario/turepo/releases`).
-2. Haz clic en **Draft a new release** (o **Create a new release**).
-3. En **Tag**, escribe algo como `v1.0` → **Create new tag**.
-4. En **Title**, escribe `Laboratorio #1 – Entrega`.
-5. Arrastra los 3 archivos `.zip` (uno por práctica) al recuadro de **Attach binaries**.
-6. Haz clic en **Publish release**.
-
-Después de esto, los enlaces de la tabla de arriba funcionarán automáticamente (apuntan a `releases/latest/download/...`, así que siempre usan la versión más reciente que publiques).
-
----
-
-## 📁 Contenido del repositorio
+## Contenido del repositorio
 
 | Carpeta / Proyecto | Práctica | Descripción |
 |---|---|---|
@@ -39,15 +19,7 @@ Después de esto, los enlaces de la tabla de arriba funcionarán automáticament
 
 ---
 
-## ⚙️ Requisitos
-
-- **Visual Studio** (2019 o superior recomendado)
-- **.NET Framework 4.7.2** (o el que tengas configurado en cada proyecto)
-- Sistema operativo **Windows** (Windows Forms no corre en Mac/Linux)
-
----
-
-## ▶️ Cómo ejecutar cada práctica
+##  Cómo ejecutar cada práctica
 
 1. Clona o descarga este repositorio.
 2. Abre el archivo `.sln` de la práctica que quieras correr (por ejemplo, `Pract3_Estructura_ProgramadoPor_ElvisLi.sln`).
@@ -56,7 +28,7 @@ Después de esto, los enlaces de la tabla de arriba funcionarán automáticament
 
 ---
 
-## 🧩 Práctica #1 — Pract1-Controles
+## Práctica #1 — Pract1-Controles
 
 Formulario que captura una fecha (día, mes, año) y la muestra formateada, con validación de campos vacíos.
 
@@ -73,7 +45,7 @@ Formulario que captura una fecha (día, mes, año) y la muestra formateada, con 
 
 ---
 
-## 🧩 Práctica #2 — Descuentos
+## Práctica #2 — Descuentos
 
 Calculadora de descuentos según el valor de una venta:
 
@@ -97,7 +69,7 @@ Calculadora de descuentos según el valor de una venta:
 
 ---
 
-## 🧩 Práctica #3 — Estructura If (GroupBox + RadioButtons)
+## Práctica #3 — Estructura If (GroupBox + RadioButtons)
 
 Calculadora que realiza una operación matemática entre dos valores según el RadioButton seleccionado dentro de un GroupBox.
 
@@ -116,7 +88,7 @@ Calculadora que realiza una operación matemática entre dos valores según el R
 
 ---
 
-## ✅ Checklist general antes de entregar
+## Checklist general antes de entregar
 
 - [ ] Cada formulario muestra el título correcto en la barra de título
 - [ ] Todos los TextBox usan el prefijo `txt`, Labels `lbl`, Buttons `btn`
@@ -127,13 +99,13 @@ Calculadora que realiza una operación matemática entre dos valores según el R
 
 ---
 
-## 🛠️ Solución de problemas comunes
+## Solución de problemas comunes
 
-### ❌ `CS0246`: "The type or namespace name 'Form1' could not be found" (en `Program.cs`)
+### `CS0246`: "The type or namespace name 'Form1' could not be found" (en `Program.cs`)
 El `namespace` de `Program.cs` no coincide con el de `Form1.cs` / `Form1.Designer.cs`.
 **Solución:** verifica que los 3 archivos tengan **exactamente** el mismo `namespace`.
 
-### ❌ Un botón "no hace nada" al hacer clic
+### Un botón "no hace nada" al hacer clic
 El evento `Click` no está conectado en el diseñador.
 **Solución:** en `Form1.Designer.cs`, busca la sección del botón y confirma que tenga una línea como:
 ```csharp
@@ -141,11 +113,11 @@ this.button2.Click += new System.EventHandler(this.button2_Click);
 ```
 Si falta, agrégala manualmente debajo de `UseVisualStyleBackColor`, o conéctala desde el panel de Propiedades (⚡ Events) en el diseñador.
 
-### ❌ "The designer cannot process unknown name 'xxx_Click'"
+### "The designer cannot process unknown name 'xxx_Click'"
 Hay una línea en `Form1.Designer.cs` conectando un evento a un método que no existe en `Form1.cs` (usualmente por un doble clic accidental sobre un control).
 **Solución:** agrega el método vacío correspondiente en `Form1.cs`, o borra esa línea de conexión en el `Designer.cs`.
 
-### ❌ El diseñador visual no abre, pero el programa corre bien con F5
+### El diseñador visual no abre, pero el programa corre bien con F5
 Es un problema de caché del diseñador, no de tu código.
 **Solución:**
 1. Cierra todas las pestañas y la solución completa.
@@ -153,14 +125,13 @@ Es un problema de caché del diseñador, no de tu código.
 3. Borra las carpetas `bin` y `obj` del proyecto.
 4. Reabre el `.sln`, compila (`Ctrl+Shift+B`) y abre el diseñador de nuevo.
 
-### ❌ "An Application Control policy has blocked this file" (Smart App Control)
+### "An Application Control policy has blocked this file" (Smart App Control)
 Windows 11 bloquea el `.exe` recién compilado por no tener firma digital reconocida.
 **Solución (solo en PC personal):** Configuración → Seguridad de Windows → Control de aplicaciones y del explorador → Smart App Control → Desactivar.
-⚠️ Acción **irreversible sin reinstalar Windows** — no la actives en equipos de laboratorio/universidad sin autorización.
 
 ---
 
-## 📚 Conceptos aplicados
+## Conceptos aplicados
 
 - Estructura `if / else if / else`
 - `decimal.TryParse()` para validar entradas numéricas
@@ -173,7 +144,6 @@ Windows 11 bloquea el `.exe` recién compilado por no tener firma digital recono
 
 ---
 
-## 👤 Autor
+## Autor
 
 **Elvis Li**
-Universidad Tecnológica de Panamá — Facultad de Ingeniería Eléctrica
