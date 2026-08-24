@@ -11,8 +11,6 @@ Repositorio con las soluciones a las 3 prácticas del Laboratorio #1: aplicacion
 
 ## Descargas directas
 
-> ⚠️ GitHub no permite descargar una subcarpeta individual con un solo clic desde la vista normal del repositorio. Por eso cada práctica también está disponible como archivo `.zip` en la sección **Releases** de este repositorio — así puedes descargarla completa (solución, proyecto y código) con un solo clic, sin clonar todo el repo.
-
 | Práctica | Descarga |
 |---|---|
 | Práctica #1 – Controles | [⬇️ Pract1_Controles_ProgramadoPor_ElvisLi.zip](../../releases/latest/download/Pract1_Controles_ProgramadoPor_ElvisLi.zip) |
