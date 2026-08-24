@@ -9,21 +9,13 @@ Repositorio con las soluciones a las 3 prácticas del Laboratorio #1: aplicacion
 
 ---
 
-## 📁 Contenido del repositorio
+## Contenido del repositorio
 
 | Carpeta / Proyecto | Práctica | Descripción |
 |---|---|---|
 | `Pract1_Controles_ProgramadoPor_ElvisLi` | Práctica #1 | Captura de fecha (día, mes, año) usando TextBox, Label y Button |
 | `Pract2_Descuento_ProgramadoPor_ElvisLi` | Práctica #2 | Calculadora de descuentos por rango de venta |
 | `Pract3_Estructura_ProgramadoPor_ElvisLi` | Práctica #3 | Calculadora con GroupBox y RadioButtons (Suma, Resta, Multiplicación, División) |
-
----
-
-## ⚙️ Requisitos
-
-- **Visual Studio** (2019 o superior recomendado)
-- **.NET Framework 4.7.2** (o el que tengas configurado en cada proyecto)
-- Sistema operativo **Windows** (Windows Forms no corre en Mac/Linux)
 
 ---
 
@@ -156,4 +148,3 @@ Windows 11 bloquea el `.exe` recién compilado por no tener firma digital recono
 ## 👤 Autor
 
 **Elvis Li**
-Universidad Tecnológica de Panamá — Facultad de Ingeniería Eléctrica
