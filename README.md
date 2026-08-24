@@ -19,7 +19,7 @@ Repositorio con las soluciones a las 3 prácticas del Laboratorio #1: aplicacion
 
 ---
 
-## ▶️ Cómo ejecutar cada práctica
+##  Cómo ejecutar cada práctica
 
 1. Clona o descarga este repositorio.
 2. Abre el archivo `.sln` de la práctica que quieras correr (por ejemplo, `Pract3_Estructura_ProgramadoPor_ElvisLi.sln`).
@@ -28,7 +28,7 @@ Repositorio con las soluciones a las 3 prácticas del Laboratorio #1: aplicacion
 
 ---
 
-## 🧩 Práctica #1 — Pract1-Controles
+## Práctica #1 — Pract1-Controles
 
 Formulario que captura una fecha (día, mes, año) y la muestra formateada, con validación de campos vacíos.
 
